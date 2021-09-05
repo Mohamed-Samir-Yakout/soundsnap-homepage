@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/e748555623.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="pageHeader">
+        <img src="image.jpg" alt="logo" id="logo">
+
+        <input type="text" id="search" placeholder="Search for sound effects">
+        <a href="#" style="text-decoration: none;"><span id="link1" class="link">Pricing</span></a>
+        <a href="#" style="text-decoration: none;"><span id="link2" class="link">FAQ</span></a>
+        <a href="#" style="text-decoration: none;"><span id="link3" class="link">SFXHD</span></a>
+        <a href="#" style="text-decoration: none;"><span id="link6" class="link">Login/</span></a>
+        <a href="#" style="text-decoration: none;"><span id="link5" class="link">Register</span></a>
+        <a href="https://www.facebook.com" style="text-decoration: none;" target="_blank"><span class="icon"><i class="fab fa-facebook-f"></i></span></a>
+        <a href="https://twitter.com" style="text-decoration: none;" target="_blank"><span class="icon"><i class="fab fa-twitter"></i></span></a>
+        <a href="https://www.instagram.com" style="text-decoration: none;" target="_blank"><span class="icon"><i class="fab fa-instagram"></i></span></a>
+
+    </header>
+    <aside id="leftSide">
+        <div id="genTxt">
+            <h1 id="txt1">Find The Perfect Sound Effect.</h1>
+            <h4 id="txt2">373,924 Available Sounds. Library Updated Weekly. Unlimited Downloads.</h4>
+            <input type="button" value="Buy Sound Effects" id="buybtn">
+        </div>
+
+
+    </aside>
+    <aside id="rightSide"></aside>
+
+    <div style="clear: both;"></div>
+
+    <section id="sec1">
+        <h2 id="featured">Featured Sound Effects Catigores</h2>
+        <div id="feat1" class="feat" onmouseover="hide(this)" onmouseout="show(this)">
+            <img src="images/img1.jpg" alt="" style="width: 100%; height: 100%; border-radius: 5px;" id="featimg1">
+            <h3 class="txxt">WALLA</h3>
+        </div>
+        <div id="feat2" class="feat" onmouseover="hide(this)" onmouseout="show(this)">
+            <img src="images/img2.jpg" alt="" style="width: 100%; height: 100%; border-radius: 5px;" id="featimg2">
+            <h3 class="txxt">WHOOSH</h3>
+        </div>
+        <div id="feat3" class="feat" onmouseover="hide(this)" onmouseout="show(this)">
+            <img src="images/img3.jpg" alt="" style="width: 100%; height: 100%; border-radius: 5px;" id="featimg3">
+            <h3 class="txxt">WIND</h3>
+        </div>
+        <div id="feat4" class="feat" onmouseover="hide(this)" onmouseout="show(this)">
+            <img src="images/img4.jpg" alt="" style="width: 100%; height: 100%; border-radius: 5px;" id="featimg4">
+            <h3 class="txxt">FOOTSTEPS</h3>
+        </div>
+        <div id="feat5" class="feat" onmouseover="hide(this)" onmouseout="show(this)">
+            <img src="images/cartoon.jpg" alt="" style="width: 100%; height: 100%; border-radius: 5px;" id="featimg5">
+            <h3 class="txxt">CARTOON</h3>
+        </div>
+        <div id="feat6" class="feat" onmouseover="hide(this)" onmouseout="show(this)">
+            <img src="images/drones.jpg" alt="" style="width: 100%; height: 100%; border-radius: 5px;" id="featimg6">
+            <h3 class="txxt">DRONES</h3>
+        </div>
+        <div id="feat7" class="featx" onmouseover="hide(this)" onmouseout="show(this)">
+            <img src="images/img7.jpg" alt="" style="width: 100%; height: 100%; border-radius: 5px;" id="featimg7">
+            <h3 class="txxt2">MENUES & INTERFACE</h3>
+        </div>
+        <div id="feat8" class="featx" onmouseover="hide(this)" onmouseout="show(this)">
+            <img src="images/img8.jpg" alt="" style="width: 100%; height: 100%; border-radius: 5px;" id="featimg8">
+            <h3 class="txxt2">AMBIANCE</h3>
+        </div>
+    </section>
+    <section id="sec2" style="padding-left: 50px; height: 250px;">
+        <h2 id="browse">Brwose Sounds by</h2><br>
+        <div id="select">
+            <span class="sel" onclick="latest()"><a class="sel1">Latest</a></span>
+            <span class="sel" onclick="byLoc()"><a class="sel1" >Location</a></span>
+
+        </div>
+        <div id="cont1">
+            <div id="browse1" style="display: block;">
+                <div class="latest"><img src="images/browse2.jpg" class="brwoseimg">
+                    <h3 class="txxt3">Life Aquatic</h3>
+                </div>
+                <div class="latest">
+                    <img src="images/browse3.jpg" class="brwoseimg" alt="">
+                    <h3 class="txxt3">Background</h3>
+                    <h3 class="txxt4" style="left: -22px;">Conversation</h3>
+                </div>
+                <div class="latest">
+                    <img src="images/browse1.jpg" class="brwoseimg" alt="">
+                    <h3 class="txxt3">Western Ways</h3>
+                </div>
+                <div class="latest">
+                    <img src="images/browse4.jpg" class="brwoseimg" alt="">
+                    <h3 class="txxt3">Silent Assassin</h3>
+                </div>
+            </div>
+            <div id="browse2" style="display: none;">
+                <div class="loc" style="width: 22%; ">
+                    <h3>London</h3>
+                </div>
+                <div class="loc" style="width: 22%; ">
+                    <h3>Paris</h3>
+                </div>
+                <div class="loc" style="width: 22%; ">
+                    <h3>Tokyo</h3>
+                </div>
+                <div class="loc" style="width: 22%; ">
+                    <h3>Berlin</h3>
+                </div>
+                <div class="loc" style="width: 22%; ">
+                    <h3>Roma</h3>
+                </div>
+                <div class="loc" style="width: 22%; ">
+                    <h3>Cairo</h3>
+                </div>
+                <div class="loc" style="width: 22%; ">
+                    <h3>Madrid</h3>
+                </div>
+                <div class="loc" style="width: 22%; ">
+                    <h3>NEW Yourk</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="section3" style="padding-left: 50px;">
+        <h2>Featuring sound designers & recordists from</h2><br>
+        <div class="vid" id="vid1">
+            <video src="videos/black_swan.mp4" id="video1" loop></video>
+            <h3 class="txxt4">Black Swan</h3>
+        </div>
+        <div class="vid" id="vid2">
+            <video src="videos/baby_driver.mp4" id="video2" loop></video>
+            <h3 class="txxt4">Baby Driver</h3>
+        </div>
+        <div class="vid" id="vid3">
+            <video src="videos/dallas_buyers_club.mp4" id="video3" loop></video>
+            <h3 class="txxt4">Dallas Buyers Club</h3>
+        </div>
+        <div class="vid" id="vid4">
+            <video src="videos/mother.mp4" id="video4" loop></video>
+            <h3 class="txxt4" style="left: 80px;">Mother</h3>
+        </div>
+        <div class="vid" id="vid5">
+            <video src="videos/the_dark_knight.mp4" id="video5" loop></video>
+            <h3 class="txxt4">The Dark Knight</h3>
+        </div>
+        <div class="vid" id="vid6">
+            <video src="videos/tron_legacy.mp4" id="video6" loop></video>
+            <h3 class="txxt4">Tron Legacy</h3>
+        </div>
+    </section>
+
+    <footer id="pageFooter">
+        <div id="foot1">
+            <div id="foot1txt1">
+                <h1 style="margin-top: auto;">Sound like a Pro.</h1>
+                <a href="#" id="footlink">
+                    <h1>Get started for free.</h1>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
